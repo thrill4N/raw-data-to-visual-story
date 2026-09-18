@@ -1,0 +1,190 @@
+:root {
+  --paper: #F2F1EC;
+  --ink: #1B1D1B;
+  --ink-soft: #4A4A46;
+  --hairline: #D8D5CB;
+
+  --retail: #2B5B6B;
+  --retail-tint: #DCE8EA;
+  --clinical: #8C5A2B;
+  --clinical-tint: #EDE1D3;
+  --flag: #B23A3A;
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'IBM Plex Sans', -apple-system, sans-serif;
+  --mono: 'IBM Plex Mono', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.55;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--retail);
+  outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--hairline);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 10;
+}
+.wordmark { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; }
+.site-header nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 0.92rem;
+}
+.site-header nav a:hover { color: var(--ink); }
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 88px 32px 56px;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+.hero-sub { color: var(--ink-soft); font-size: 1.08rem; max-width: 62ch; }
+
+/* ---------- Chapters ---------- */
+.chapter {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 64px 32px;
+  border-top: 1px solid var(--hairline);
+}
+.chapter-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.chapter-num {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.chapter h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin: 0;
+}
+.chapter--retail .chapter-num { color: var(--retail); }
+.chapter--clinical .chapter-num { color: var(--clinical); }
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.split--reverse { grid-template-columns: 1.2fr 1fr; }
+.split--reverse .split-text { order: 2; }
+.split--reverse .split-chart { order: 1; }
+
+.split-text h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 0 0 12px;
+}
+.split-text p { color: var(--ink-soft); max-width: 46ch; }
+
+.statline {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 20px;
+}
+.stat {
+  font-family: var(--serif);
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.chapter--retail .stat { color: var(--retail); }
+.chapter--clinical .stat { color: var(--clinical); }
+.stat-label { color: var(--ink-soft); font-size: 0.95rem; max-width: 34ch; }
+
+.chart {
+  width: 100%;
+  min-height: 320px;
+}
+.chart--small { min-height: 260px; }
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.quality-note {
+  border-left: 3px solid var(--flag);
+  background: rgba(178, 58, 58, 0.06);
+  padding: 18px 22px;
+  border-radius: 2px;
+}
+.quality-tag {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--flag);
+  margin-bottom: 8px;
+}
+.quality-note p { margin: 0; color: var(--ink); font-size: 0.95rem; }
+.mono { font-family: var(--mono); font-size: 0.9em; background: rgba(0,0,0,0.05); padding: 1px 5px; border-radius: 2px; }
+
+.chapter--method p {
+  max-width: 68ch;
+  color: var(--ink-soft);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 40px 32px 64px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  .split, .split--reverse {
+    grid-template-columns: 1fr;
+  }
+  .split--reverse .split-text,
+  .split--reverse .split-chart {
+    order: unset;
+  }
+  .mini-grid { grid-template-columns: 1fr; }
+  .site-header nav a { margin-left: 16px; }
+  .chapter { padding: 48px 20px; }
+}

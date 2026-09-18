@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raw Data to Visual Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="wordmark">Raw Data → Visual Story</span>
+  <nav>
+    <a href="#retail">Retail</a>
+    <a href="#clinical">Clinical</a>
+    <a href="#method">Method</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Two datasets. Two questions the numbers can actually answer.</h1>
+  <p class="hero-sub">One tracks what people buy. One tracks what a doctor prescribes. Both were cleaned by flagging what looked wrong instead of deleting it, so nothing here is hidden from you.</p>
+</section>
+
+<!-- ============ RETAIL CHAPTER ============ -->
+<section id="retail" class="chapter chapter--retail">
+  <div class="chapter-head">
+    <span class="chapter-num">01</span>
+    <h2>What the e-commerce data shows</h2>
+  </div>
+
+  <div class="split">
+    <div class="split-text">
+      <p class="statline"><span class="stat" id="stat-revenue">—</span><span class="stat-label">in clean, verifiable revenue across 49,222 orders</span></p>
+      <p>Electronics and Accessories carry the store. Gateway payments dominate, and Tehran alone accounts for more orders than the next three cities combined.</p>
+      <p>Order volume falls by roughly a third starting February 2026. That could be a real slowdown, or the dataset simply stops being fully populated past that point — the data alone can't say which, so we're showing it rather than smoothing it over.</p>
+    </div>
+    <div class="split-chart">
+      <div id="chart-revenue-month" class="chart"></div>
+    </div>
+  </div>
+
+  <div class="split split--reverse">
+    <div class="split-chart">
+      <div id="chart-category" class="chart"></div>
+    </div>
+    <div class="split-text">
+      <h3>Where the revenue actually comes from</h3>
+      <p>Electronics alone is worth more than every other category combined. Stationery barely registers next to it — worth knowing before assuming all categories deserve equal shelf space or marketing spend.</p>
+    </div>
+  </div>
+
+  <div class="mini-grid">
+    <div class="mini-chart"><div id="chart-status" class="chart chart--small"></div></div>
+    <div class="mini-chart"><div id="chart-payment" class="chart chart--small"></div></div>
+    <div class="mini-chart"><div id="chart-cities" class="chart chart--small"></div></div>
+  </div>
+
+  <div class="quality-note quality-note--retail">
+    <span class="quality-tag">Data quality</span>
+    <p>24 orders were flagged, not deleted: 19 had negative quantity or sales (18 of those still marked "Completed"), and 5 had zero quantity. They're excluded from the revenue figure above but stay in the underlying file for anyone who wants to audit them.</p>
+  </div>
+</section>
+
+<!-- ============ CLINICAL CHAPTER ============ -->
+<section id="clinical" class="chapter chapter--clinical">
+  <div class="chapter-head">
+    <span class="chapter-num">02</span>
+    <h2>What the drug prescription data shows</h2>
+  </div>
+
+  <div class="split">
+    <div class="split-text">
+      <p class="statline"><span class="stat">100%</span><span class="stat-label">of patients with a sodium-to-potassium ratio above 15 were prescribed Drug Y</span></p>
+      <p>Across 200 patients, that single lab value splits the data almost perfectly. Below the line, four other drugs compete depending on blood pressure and cholesterol. Above it, the outcome barely varies.</p>
+    </div>
+    <div class="split-chart">
+      <div id="chart-scatter" class="chart"></div>
+    </div>
+  </div>
+
+  <div class="split split--reverse">
+    <div class="split-chart">
+      <div id="chart-drug-dist" class="chart chart--small"></div>
+    </div>
+    <div class="split-text">
+      <h3>Drug Y is the most common outcome</h3>
+      <p>91 of 200 patients — nearly half — were prescribed Drug Y, almost entirely explained by that one ratio. The other four drugs split the remaining patients more evenly.</p>
+    </div>
+  </div>
+
+  <div class="quality-note quality-note--clinical">
+    <span class="quality-tag">Data quality</span>
+    <p>The source file wrote drug names inconsistently — <span class="mono">DrugY</span> alongside <span class="mono">drugA</span>, <span class="mono">drugB</span>, <span class="mono">drugC</span>, <span class="mono">drugX</span>. 109 of 200 rows needed relabeling to a single consistent format before any group-by would count them correctly.</p>
+  </div>
+</section>
+
+<section id="method" class="chapter chapter--method">
+  <div class="chapter-head">
+    <span class="chapter-num">03</span>
+    <h2>How this was built</h2>
+  </div>
+  <p>Both datasets went through the same three steps: profile for nulls, duplicates and referential integrity; flag anything implausible in its own column rather than dropping the row; then aggregate only the clean subset for headline numbers, while keeping the flagged rows visible for audit. Python (pandas) did the cleaning and aggregation; this page renders the pre-computed results with Plotly.js — no server required.</p>
+</section>
+
+<footer class="site-footer">
+  <p>Built for MLH Hack Week — "Raw Data to Visual Story."</p>
+</footer>
+
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

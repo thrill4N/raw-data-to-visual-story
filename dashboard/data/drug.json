@@ -1,0 +1,1020 @@
+{
+  "n_rows": 200,
+  "casing_fixed_rows": 109,
+  "drug_distribution": {
+    "DrugY": 91,
+    "DrugX": 54,
+    "DrugA": 23,
+    "DrugC": 16,
+    "DrugB": 16
+  },
+  "na_to_k_median_by_drug": {
+    "DrugA": 11.23,
+    "DrugB": 11.17,
+    "DrugC": 10.49,
+    "DrugX": 10.52,
+    "DrugY": 20.49
+  },
+  "scatter_points": [
+    {
+      "age": 23,
+      "na_to_k": 25.355,
+      "drug": "DrugY"
+    },
+    {
+      "age": 47,
+      "na_to_k": 13.093,
+      "drug": "DrugC"
+    },
+    {
+      "age": 47,
+      "na_to_k": 10.114,
+      "drug": "DrugC"
+    },
+    {
+      "age": 28,
+      "na_to_k": 7.798,
+      "drug": "DrugX"
+    },
+    {
+      "age": 61,
+      "na_to_k": 18.043,
+      "drug": "DrugY"
+    },
+    {
+      "age": 22,
+      "na_to_k": 8.607,
+      "drug": "DrugX"
+    },
+    {
+      "age": 49,
+      "na_to_k": 16.275,
+      "drug": "DrugY"
+    },
+    {
+      "age": 41,
+      "na_to_k": 11.037,
+      "drug": "DrugC"
+    },
+    {
+      "age": 60,
+      "na_to_k": 15.171,
+      "drug": "DrugY"
+    },
+    {
+      "age": 43,
+      "na_to_k": 19.368,
+      "drug": "DrugY"
+    },
+    {
+      "age": 47,
+      "na_to_k": 11.767,
+      "drug": "DrugC"
+    },
+    {
+      "age": 34,
+      "na_to_k": 19.199,
+      "drug": "DrugY"
+    },
+    {
+      "age": 43,
+      "na_to_k": 15.376,
+      "drug": "DrugY"
+    },
+    {
+      "age": 74,
+      "na_to_k": 20.942,
+      "drug": "DrugY"
+    },
+    {
+      "age": 50,
+      "na_to_k": 12.703,
+      "drug": "DrugX"
+    },
+    {
+      "age": 16,
+      "na_to_k": 15.516,
+      "drug": "DrugY"
+    },
+    {
+      "age": 69,
+      "na_to_k": 11.455,
+      "drug": "DrugX"
+    },
+    {
+      "age": 43,
+      "na_to_k": 13.972,
+      "drug": "DrugA"
+    },
+    {
+      "age": 23,
+      "na_to_k": 7.298,
+      "drug": "DrugC"
+    },
+    {
+      "age": 32,
+      "na_to_k": 25.974,
+      "drug": "DrugY"
+    },
+    {
+      "age": 57,
+      "na_to_k": 19.128,
+      "drug": "DrugY"
+    },
+    {
+      "age": 63,
+      "na_to_k": 25.917,
+      "drug": "DrugY"
+    },
+    {
+      "age": 47,
+      "na_to_k": 30.568,
+      "drug": "DrugY"
+    },
+    {
+      "age": 48,
+      "na_to_k": 15.036,
+      "drug": "DrugY"
+    },
+    {
+      "age": 33,
+      "na_to_k": 33.486,
+      "drug": "DrugY"
+    },
+    {
+      "age": 28,
+      "na_to_k": 18.809,
+      "drug": "DrugY"
+    },
+    {
+      "age": 31,
+      "na_to_k": 30.366,
+      "drug": "DrugY"
+    },
+    {
+      "age": 49,
+      "na_to_k": 9.381,
+      "drug": "DrugX"
+    },
+    {
+      "age": 39,
+      "na_to_k": 22.697,
+      "drug": "DrugY"
+    },
+    {
+      "age": 45,
+      "na_to_k": 17.951,
+      "drug": "DrugY"
+    },
+    {
+      "age": 18,
+      "na_to_k": 8.75,
+      "drug": "DrugX"
+    },
+    {
+      "age": 74,
+      "na_to_k": 9.567,
+      "drug": "DrugB"
+    },
+    {
+      "age": 49,
+      "na_to_k": 11.014,
+      "drug": "DrugX"
+    },
+    {
+      "age": 65,
+      "na_to_k": 31.876,
+      "drug": "DrugY"
+    },
+    {
+      "age": 53,
+      "na_to_k": 14.133,
+      "drug": "DrugX"
+    },
+    {
+      "age": 46,
+      "na_to_k": 7.285,
+      "drug": "DrugX"
+    },
+    {
+      "age": 32,
+      "na_to_k": 9.445,
+      "drug": "DrugA"
+    },
+    {
+      "age": 39,
+      "na_to_k": 13.938,
+      "drug": "DrugX"
+    },
+    {
+      "age": 39,
+      "na_to_k": 9.709,
+      "drug": "DrugX"
+    },
+    {
+      "age": 15,
+      "na_to_k": 9.084,
+      "drug": "DrugX"
+    },
+    {
+      "age": 73,
+      "na_to_k": 19.221,
+      "drug": "DrugY"
+    },
+    {
+      "age": 58,
+      "na_to_k": 14.239,
+      "drug": "DrugB"
+    },
+    {
+      "age": 50,
+      "na_to_k": 15.79,
+      "drug": "DrugY"
+    },
+    {
+      "age": 23,
+      "na_to_k": 12.26,
+      "drug": "DrugX"
+    },
+    {
+      "age": 50,
+      "na_to_k": 12.295,
+      "drug": "DrugX"
+    },
+    {
+      "age": 66,
+      "na_to_k": 8.107,
+      "drug": "DrugX"
+    },
+    {
+      "age": 37,
+      "na_to_k": 13.091,
+      "drug": "DrugA"
+    },
+    {
+      "age": 68,
+      "na_to_k": 10.291,
+      "drug": "DrugC"
+    },
+    {
+      "age": 23,
+      "na_to_k": 31.686,
+      "drug": "DrugY"
+    },
+    {
+      "age": 28,
+      "na_to_k": 19.796,
+      "drug": "DrugY"
+    },
+    {
+      "age": 58,
+      "na_to_k": 19.416,
+      "drug": "DrugY"
+    },
+    {
+      "age": 67,
+      "na_to_k": 10.898,
+      "drug": "DrugX"
+    },
+    {
+      "age": 62,
+      "na_to_k": 27.183,
+      "drug": "DrugY"
+    },
+    {
+      "age": 24,
+      "na_to_k": 18.457,
+      "drug": "DrugY"
+    },
+    {
+      "age": 68,
+      "na_to_k": 10.189,
+      "drug": "DrugB"
+    },
+    {
+      "age": 26,
+      "na_to_k": 14.16,
+      "drug": "DrugC"
+    },
+    {
+      "age": 65,
+      "na_to_k": 11.34,
+      "drug": "DrugB"
+    },
+    {
+      "age": 40,
+      "na_to_k": 27.826,
+      "drug": "DrugY"
+    },
+    {
+      "age": 60,
+      "na_to_k": 10.091,
+      "drug": "DrugX"
+    },
+    {
+      "age": 34,
+      "na_to_k": 18.703,
+      "drug": "DrugY"
+    },
+    {
+      "age": 38,
+      "na_to_k": 29.875,
+      "drug": "DrugY"
+    },
+    {
+      "age": 24,
+      "na_to_k": 9.475,
+      "drug": "DrugA"
+    },
+    {
+      "age": 67,
+      "na_to_k": 20.693,
+      "drug": "DrugY"
+    },
+    {
+      "age": 45,
+      "na_to_k": 8.37,
+      "drug": "DrugX"
+    },
+    {
+      "age": 60,
+      "na_to_k": 13.303,
+      "drug": "DrugB"
+    },
+    {
+      "age": 68,
+      "na_to_k": 27.05,
+      "drug": "DrugY"
+    },
+    {
+      "age": 29,
+      "na_to_k": 12.856,
+      "drug": "DrugA"
+    },
+    {
+      "age": 17,
+      "na_to_k": 10.832,
+      "drug": "DrugX"
+    },
+    {
+      "age": 54,
+      "na_to_k": 24.658,
+      "drug": "DrugY"
+    },
+    {
+      "age": 18,
+      "na_to_k": 24.276,
+      "drug": "DrugY"
+    },
+    {
+      "age": 70,
+      "na_to_k": 13.967,
+      "drug": "DrugB"
+    },
+    {
+      "age": 28,
+      "na_to_k": 19.675,
+      "drug": "DrugY"
+    },
+    {
+      "age": 24,
+      "na_to_k": 10.605,
+      "drug": "DrugX"
+    },
+    {
+      "age": 41,
+      "na_to_k": 22.905,
+      "drug": "DrugY"
+    },
+    {
+      "age": 31,
+      "na_to_k": 17.069,
+      "drug": "DrugY"
+    },
+    {
+      "age": 26,
+      "na_to_k": 20.909,
+      "drug": "DrugY"
+    },
+    {
+      "age": 36,
+      "na_to_k": 11.198,
+      "drug": "DrugA"
+    },
+    {
+      "age": 26,
+      "na_to_k": 19.161,
+      "drug": "DrugY"
+    },
+    {
+      "age": 19,
+      "na_to_k": 13.313,
+      "drug": "DrugA"
+    },
+    {
+      "age": 32,
+      "na_to_k": 10.84,
+      "drug": "DrugX"
+    },
+    {
+      "age": 60,
+      "na_to_k": 13.934,
+      "drug": "DrugB"
+    },
+    {
+      "age": 64,
+      "na_to_k": 7.761,
+      "drug": "DrugX"
+    },
+    {
+      "age": 32,
+      "na_to_k": 9.712,
+      "drug": "DrugC"
+    },
+    {
+      "age": 38,
+      "na_to_k": 11.326,
+      "drug": "DrugA"
+    },
+    {
+      "age": 47,
+      "na_to_k": 10.067,
+      "drug": "DrugC"
+    },
+    {
+      "age": 59,
+      "na_to_k": 13.935,
+      "drug": "DrugB"
+    },
+    {
+      "age": 51,
+      "na_to_k": 13.597,
+      "drug": "DrugX"
+    },
+    {
+      "age": 69,
+      "na_to_k": 15.478,
+      "drug": "DrugY"
+    },
+    {
+      "age": 37,
+      "na_to_k": 23.091,
+      "drug": "DrugY"
+    },
+    {
+      "age": 50,
+      "na_to_k": 17.211,
+      "drug": "DrugY"
+    },
+    {
+      "age": 62,
+      "na_to_k": 16.594,
+      "drug": "DrugY"
+    },
+    {
+      "age": 41,
+      "na_to_k": 15.156,
+      "drug": "DrugY"
+    },
+    {
+      "age": 29,
+      "na_to_k": 29.45,
+      "drug": "DrugY"
+    },
+    {
+      "age": 42,
+      "na_to_k": 29.271,
+      "drug": "DrugY"
+    },
+    {
+      "age": 56,
+      "na_to_k": 15.015,
+      "drug": "DrugY"
+    },
+    {
+      "age": 36,
+      "na_to_k": 11.424,
+      "drug": "DrugX"
+    },
+    {
+      "age": 58,
+      "na_to_k": 38.247,
+      "drug": "DrugY"
+    },
+    {
+      "age": 56,
+      "na_to_k": 25.395,
+      "drug": "DrugY"
+    },
+    {
+      "age": 20,
+      "na_to_k": 35.639,
+      "drug": "DrugY"
+    },
+    {
+      "age": 15,
+      "na_to_k": 16.725,
+      "drug": "DrugY"
+    },
+    {
+      "age": 31,
+      "na_to_k": 11.871,
+      "drug": "DrugA"
+    },
+    {
+      "age": 45,
+      "na_to_k": 12.854,
+      "drug": "DrugA"
+    },
+    {
+      "age": 28,
+      "na_to_k": 13.127,
+      "drug": "DrugC"
+    },
+    {
+      "age": 56,
+      "na_to_k": 8.966,
+      "drug": "DrugX"
+    },
+    {
+      "age": 22,
+      "na_to_k": 28.294,
+      "drug": "DrugY"
+    },
+    {
+      "age": 37,
+      "na_to_k": 8.968,
+      "drug": "DrugX"
+    },
+    {
+      "age": 22,
+      "na_to_k": 11.953,
+      "drug": "DrugX"
+    },
+    {
+      "age": 42,
+      "na_to_k": 20.013,
+      "drug": "DrugY"
+    },
+    {
+      "age": 72,
+      "na_to_k": 9.677,
+      "drug": "DrugB"
+    },
+    {
+      "age": 23,
+      "na_to_k": 16.85,
+      "drug": "DrugY"
+    },
+    {
+      "age": 50,
+      "na_to_k": 7.49,
+      "drug": "DrugA"
+    },
+    {
+      "age": 47,
+      "na_to_k": 6.683,
+      "drug": "DrugX"
+    },
+    {
+      "age": 35,
+      "na_to_k": 9.17,
+      "drug": "DrugX"
+    },
+    {
+      "age": 65,
+      "na_to_k": 13.769,
+      "drug": "DrugX"
+    },
+    {
+      "age": 20,
+      "na_to_k": 9.281,
+      "drug": "DrugX"
+    },
+    {
+      "age": 51,
+      "na_to_k": 18.295,
+      "drug": "DrugY"
+    },
+    {
+      "age": 67,
+      "na_to_k": 9.514,
+      "drug": "DrugX"
+    },
+    {
+      "age": 40,
+      "na_to_k": 10.103,
+      "drug": "DrugX"
+    },
+    {
+      "age": 32,
+      "na_to_k": 10.292,
+      "drug": "DrugA"
+    },
+    {
+      "age": 61,
+      "na_to_k": 25.475,
+      "drug": "DrugY"
+    },
+    {
+      "age": 28,
+      "na_to_k": 27.064,
+      "drug": "DrugY"
+    },
+    {
+      "age": 15,
+      "na_to_k": 17.206,
+      "drug": "DrugY"
+    },
+    {
+      "age": 34,
+      "na_to_k": 22.456,
+      "drug": "DrugY"
+    },
+    {
+      "age": 36,
+      "na_to_k": 16.753,
+      "drug": "DrugY"
+    },
+    {
+      "age": 53,
+      "na_to_k": 12.495,
+      "drug": "DrugB"
+    },
+    {
+      "age": 19,
+      "na_to_k": 25.969,
+      "drug": "DrugY"
+    },
+    {
+      "age": 66,
+      "na_to_k": 16.347,
+      "drug": "DrugY"
+    },
+    {
+      "age": 35,
+      "na_to_k": 7.845,
+      "drug": "DrugX"
+    },
+    {
+      "age": 47,
+      "na_to_k": 33.542,
+      "drug": "DrugY"
+    },
+    {
+      "age": 32,
+      "na_to_k": 7.477,
+      "drug": "DrugX"
+    },
+    {
+      "age": 70,
+      "na_to_k": 20.489,
+      "drug": "DrugY"
+    },
+    {
+      "age": 52,
+      "na_to_k": 32.922,
+      "drug": "DrugY"
+    },
+    {
+      "age": 49,
+      "na_to_k": 13.598,
+      "drug": "DrugX"
+    },
+    {
+      "age": 24,
+      "na_to_k": 25.786,
+      "drug": "DrugY"
+    },
+    {
+      "age": 42,
+      "na_to_k": 21.036,
+      "drug": "DrugY"
+    },
+    {
+      "age": 74,
+      "na_to_k": 11.939,
+      "drug": "DrugX"
+    },
+    {
+      "age": 55,
+      "na_to_k": 10.977,
+      "drug": "DrugB"
+    },
+    {
+      "age": 35,
+      "na_to_k": 12.894,
+      "drug": "DrugA"
+    },
+    {
+      "age": 51,
+      "na_to_k": 11.343,
+      "drug": "DrugB"
+    },
+    {
+      "age": 69,
+      "na_to_k": 10.065,
+      "drug": "DrugX"
+    },
+    {
+      "age": 49,
+      "na_to_k": 6.269,
+      "drug": "DrugA"
+    },
+    {
+      "age": 64,
+      "na_to_k": 25.741,
+      "drug": "DrugY"
+    },
+    {
+      "age": 60,
+      "na_to_k": 8.621,
+      "drug": "DrugB"
+    },
+    {
+      "age": 74,
+      "na_to_k": 15.436,
+      "drug": "DrugY"
+    },
+    {
+      "age": 39,
+      "na_to_k": 9.664,
+      "drug": "DrugA"
+    },
+    {
+      "age": 61,
+      "na_to_k": 9.443,
+      "drug": "DrugX"
+    },
+    {
+      "age": 37,
+      "na_to_k": 12.006,
+      "drug": "DrugX"
+    },
+    {
+      "age": 26,
+      "na_to_k": 12.307,
+      "drug": "DrugA"
+    },
+    {
+      "age": 61,
+      "na_to_k": 7.34,
+      "drug": "DrugX"
+    },
+    {
+      "age": 22,
+      "na_to_k": 8.151,
+      "drug": "DrugC"
+    },
+    {
+      "age": 49,
+      "na_to_k": 8.7,
+      "drug": "DrugA"
+    },
+    {
+      "age": 68,
+      "na_to_k": 11.009,
+      "drug": "DrugB"
+    },
+    {
+      "age": 55,
+      "na_to_k": 7.261,
+      "drug": "DrugX"
+    },
+    {
+      "age": 72,
+      "na_to_k": 14.642,
+      "drug": "DrugX"
+    },
+    {
+      "age": 37,
+      "na_to_k": 16.724,
+      "drug": "DrugY"
+    },
+    {
+      "age": 49,
+      "na_to_k": 10.537,
+      "drug": "DrugC"
+    },
+    {
+      "age": 31,
+      "na_to_k": 11.227,
+      "drug": "DrugA"
+    },
+    {
+      "age": 53,
+      "na_to_k": 22.963,
+      "drug": "DrugY"
+    },
+    {
+      "age": 59,
+      "na_to_k": 10.444,
+      "drug": "DrugC"
+    },
+    {
+      "age": 34,
+      "na_to_k": 12.923,
+      "drug": "DrugX"
+    },
+    {
+      "age": 30,
+      "na_to_k": 10.443,
+      "drug": "DrugX"
+    },
+    {
+      "age": 57,
+      "na_to_k": 9.945,
+      "drug": "DrugB"
+    },
+    {
+      "age": 43,
+      "na_to_k": 12.859,
+      "drug": "DrugX"
+    },
+    {
+      "age": 21,
+      "na_to_k": 28.632,
+      "drug": "DrugY"
+    },
+    {
+      "age": 16,
+      "na_to_k": 19.007,
+      "drug": "DrugY"
+    },
+    {
+      "age": 38,
+      "na_to_k": 18.295,
+      "drug": "DrugY"
+    },
+    {
+      "age": 58,
+      "na_to_k": 26.645,
+      "drug": "DrugY"
+    },
+    {
+      "age": 57,
+      "na_to_k": 14.216,
+      "drug": "DrugX"
+    },
+    {
+      "age": 51,
+      "na_to_k": 23.003,
+      "drug": "DrugY"
+    },
+    {
+      "age": 20,
+      "na_to_k": 11.262,
+      "drug": "DrugA"
+    },
+    {
+      "age": 28,
+      "na_to_k": 12.879,
+      "drug": "DrugX"
+    },
+    {
+      "age": 45,
+      "na_to_k": 10.017,
+      "drug": "DrugX"
+    },
+    {
+      "age": 39,
+      "na_to_k": 17.225,
+      "drug": "DrugY"
+    },
+    {
+      "age": 41,
+      "na_to_k": 18.739,
+      "drug": "DrugY"
+    },
+    {
+      "age": 42,
+      "na_to_k": 12.766,
+      "drug": "DrugA"
+    },
+    {
+      "age": 73,
+      "na_to_k": 18.348,
+      "drug": "DrugY"
+    },
+    {
+      "age": 48,
+      "na_to_k": 10.446,
+      "drug": "DrugA"
+    },
+    {
+      "age": 25,
+      "na_to_k": 19.011,
+      "drug": "DrugY"
+    },
+    {
+      "age": 39,
+      "na_to_k": 15.969,
+      "drug": "DrugY"
+    },
+    {
+      "age": 67,
+      "na_to_k": 15.891,
+      "drug": "DrugY"
+    },
+    {
+      "age": 22,
+      "na_to_k": 22.818,
+      "drug": "DrugY"
+    },
+    {
+      "age": 59,
+      "na_to_k": 13.884,
+      "drug": "DrugX"
+    },
+    {
+      "age": 20,
+      "na_to_k": 11.686,
+      "drug": "DrugX"
+    },
+    {
+      "age": 36,
+      "na_to_k": 15.49,
+      "drug": "DrugY"
+    },
+    {
+      "age": 18,
+      "na_to_k": 37.188,
+      "drug": "DrugY"
+    },
+    {
+      "age": 57,
+      "na_to_k": 25.893,
+      "drug": "DrugY"
+    },
+    {
+      "age": 70,
+      "na_to_k": 9.849,
+      "drug": "DrugB"
+    },
+    {
+      "age": 47,
+      "na_to_k": 10.403,
+      "drug": "DrugA"
+    },
+    {
+      "age": 65,
+      "na_to_k": 34.997,
+      "drug": "DrugY"
+    },
+    {
+      "age": 64,
+      "na_to_k": 20.932,
+      "drug": "DrugY"
+    },
+    {
+      "age": 58,
+      "na_to_k": 18.991,
+      "drug": "DrugY"
+    },
+    {
+      "age": 23,
+      "na_to_k": 8.011,
+      "drug": "DrugA"
+    },
+    {
+      "age": 72,
+      "na_to_k": 16.31,
+      "drug": "DrugY"
+    },
+    {
+      "age": 72,
+      "na_to_k": 6.769,
+      "drug": "DrugC"
+    },
+    {
+      "age": 46,
+      "na_to_k": 34.686,
+      "drug": "DrugY"
+    },
+    {
+      "age": 56,
+      "na_to_k": 11.567,
+      "drug": "DrugC"
+    },
+    {
+      "age": 16,
+      "na_to_k": 12.006,
+      "drug": "DrugC"
+    },
+    {
+      "age": 52,
+      "na_to_k": 9.894,
+      "drug": "DrugX"
+    },
+    {
+      "age": 23,
+      "na_to_k": 14.02,
+      "drug": "DrugX"
+    },
+    {
+      "age": 40,
+      "na_to_k": 11.349,
+      "drug": "DrugX"
+    }
+  ]
+}

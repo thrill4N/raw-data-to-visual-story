@@ -1,0 +1,94 @@
+{
+  "dataset": "ecommerce_clean_final_data",
+  "rows_in": 49222,
+  "issues": [
+    {
+      "issue": "negative Quantity/Sales on orders (many still marked Completed)",
+      "rows_affected": 19,
+      "of_which_status_completed": 18,
+      "action": "flagged (flag_negative_value column), not dropped -- excluded from revenue KPIs downstream but visible in the dashboard's data-quality panel"
+    },
+    {
+      "issue": "zero-quantity orders",
+      "rows_affected": 5,
+      "action": "flagged (flag_zero_quantity column), not dropped"
+    }
+  ],
+  "nulls_found": 0,
+  "duplicates_found": 0,
+  "clean_revenue_row_count": 49198,
+  "dashboard_summary": {
+    "total_orders": 49222,
+    "clean_orders_used_for_kpis": 49198,
+    "flagged_orders_excluded_from_kpis": 24,
+    "total_revenue": 3445770.0,
+    "status_breakdown": {
+      "Completed": 45276,
+      "Cancelled": 2438,
+      "Returned": 1508
+    },
+    "category_revenue": {
+      "Electronics": 1751491.0,
+      "Accessories": 553178.0,
+      "Home Office": 446065.0,
+      "Wearables": 429497.0,
+      "Gaming": 198302.0,
+      "Stationery": 67237.0
+    },
+    "revenue_by_month": {
+      "2024-01": 121921.0,
+      "2024-02": 114664.0,
+      "2024-03": 128150.0,
+      "2024-04": 115950.0,
+      "2024-05": 123700.0,
+      "2024-06": 116784.0,
+      "2024-07": 128689.0,
+      "2024-08": 129987.0,
+      "2024-09": 116032.0,
+      "2024-10": 117260.0,
+      "2024-11": 121378.0,
+      "2024-12": 125912.0,
+      "2025-01": 118603.0,
+      "2025-02": 108609.0,
+      "2025-03": 119432.0,
+      "2025-04": 115304.0,
+      "2025-05": 130625.0,
+      "2025-06": 126269.0,
+      "2025-07": 119743.0,
+      "2025-08": 120604.0,
+      "2025-09": 120077.0,
+      "2025-10": 124435.0,
+      "2025-11": 125300.0,
+      "2025-12": 115790.0,
+      "2026-01": 130550.0,
+      "2026-02": 75132.0,
+      "2026-03": 84082.0,
+      "2026-04": 85706.0,
+      "2026-05": 85986.0,
+      "2026-06": 79096.0
+    },
+    "segment_breakdown": {
+      "Regular": 27296,
+      "New": 17056,
+      "VIP": 4870
+    },
+    "payment_method_breakdown": {
+      "Gateway": 23894,
+      "CardToCard": 11744,
+      "Wallet": 8661,
+      "Cash": 4923
+    },
+    "top_cities": {
+      "Tehran": 14001,
+      "Mashhad": 6222,
+      "Karaj": 4966,
+      "Isfahan": 4916,
+      "Shiraz": 4363,
+      "Tabriz": 4134,
+      "Ahvaz": 2923,
+      "Rasht": 2857,
+      "Kerman": 2465,
+      "Qom": 2375
+    }
+  }
+}

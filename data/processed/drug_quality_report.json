@@ -1,0 +1,70 @@
+{
+  "dataset": "drug200",
+  "rows_in": 200,
+  "issues": [
+    {
+      "issue": "inconsistent capitalization in Drug column",
+      "example_raw_values": [
+        "DrugY",
+        "drugA",
+        "drugB",
+        "drugC",
+        "drugX"
+      ],
+      "standardized_to": [
+        "DrugA",
+        "DrugB",
+        "DrugC",
+        "DrugX",
+        "DrugY"
+      ],
+      "rows_affected": 109
+    }
+  ],
+  "nulls_found": 0,
+  "duplicates_found": 0,
+  "rows_out": 200,
+  "drug_distribution": {
+    "DrugY": 91,
+    "DrugX": 54,
+    "DrugA": 23,
+    "DrugC": 16,
+    "DrugB": 16
+  },
+  "na_to_k_median_by_drug": {
+    "DrugA": 11.23,
+    "DrugB": 11.17,
+    "DrugC": 10.49,
+    "DrugX": 10.52,
+    "DrugY": 20.49
+  },
+  "age_median_by_drug": {
+    "DrugA": 36.0,
+    "DrugB": 60.0,
+    "DrugC": 47.0,
+    "DrugX": 45.0,
+    "DrugY": 42.0
+  },
+  "nak_band_vs_drug": {
+    "DrugA": {
+      "<=15 (typical range)": 23,
+      ">15 (high)": 0
+    },
+    "DrugB": {
+      "<=15 (typical range)": 16,
+      ">15 (high)": 0
+    },
+    "DrugC": {
+      "<=15 (typical range)": 16,
+      ">15 (high)": 0
+    },
+    "DrugX": {
+      "<=15 (typical range)": 54,
+      ">15 (high)": 0
+    },
+    "DrugY": {
+      "<=15 (typical range)": 0,
+      ">15 (high)": 91
+    }
+  }
+}
